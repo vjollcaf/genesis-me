@@ -1,0 +1,248 @@
+
+
+.container{
+    margin:auto;
+    font-family: 'Mulish', sans-serif;
+    width: 1109px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 29px;
+
+}
+
+.menu__item{
+    list-style: none;
+    font-family: 'Mulish';
+    font-weight:bold;
+    line-height: 23px;
+    color:black;
+    font-size:18px;
+}
+
+.logo--name{
+    font-family: 'Mulish';
+    font-weight: bolder;
+    color: solid #111111;
+    font-size: 28px;
+}
+
+
+/* Hero section */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    margin-top:110px;
+    margin-bottom: 67px;
+    flex-wrap: wrap;
+
+}
+.hero__heading{
+    width: 635px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.project{
+    display: flex;
+    flex-direction: row;
+    gap: 77px;
+}
+
+.project__row p, li{
+    margin-bottom: 37px;
+}
+
+
+.hero__heading {
+    width: 475px;
+}
+
+.hero__heading h1{
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+
+.main__image{
+    height: 660px;
+}
+
+.balloon__girl{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 45px;
+}
+
+.item__list{
+    list-style: none;
+
+}
+.item__list a{
+    text-decoration: none;
+    color: #111111;
+}
+
+.gallery{
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 45px;
+    margin-bottom: 132px;
+}
+
+.gallery__item{
+    flex:0 0 calc(33% - 30px)
+}
+
+.gallery__image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+p{
+    font-size:18px;
+    font-weight: bold;
+    line-height: 23px;
+    color: black;
+    opacity: 50%;
+    mix-blend-mode: normal;
+}
+
+
+.hero__heading p{
+        color: black;
+        opacity: 80%;
+        font-size: 16px;
+        font-weight: normal;
+        background-blend-mode: normal;
+        line-height: 26px;
+}
+
+.main__image p{
+    font-weight: 400;
+    color: black;
+    opacity: 80%;
+}
+
+
+.hero__description{
+    margin-top: 45px;
+}
+
+
+/* FOOTER SECTION */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.social{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    color: #111111;
+    font-size: 28px;
+}
+
+.links{
+    display: flex;
+    gap: 95px;
+}
+
+.social i{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* testing html */
+.project{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+/* .project__item{
+    display: flex;
+    text-align: left;
+} */
+
+.project__title{
+    width: 150px;
+    padding: 5px;
+}
+
+.project__link a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.project__item:after{
+    content:"";
+    width: 335px;
+    height: 1px;
+    display: block;
+    background-color: black;
+    opacity: 30%;
+}
+
+.project__item__wrap{
+    display: flex;
+    margin-bottom: 19px;
+}
+
+
+/* per tablet */
+@media only screen and (max-width: 992px){
+   .container{
+       width: 100%;
+   }
+
+
+ .gallery__item{
+     flex: 0 0 calc(50% - 30px);
+ }
+ }
+
+
+ @media only screen and (max-width:500px){
+    .container{
+        width: 100%;
+        padding: 0 20px ;
+    } 
+    
+    .hero__heading{
+        width: 0;
+      flex: 0 0 100%;
+      margin-bottom: 33px;
+    }
+
+    .hero__aboutus{
+        width: 0;
+        flex: 0 0 100%;
+    }
+
+    .hero__description{
+        padding: 10px;
+    }
+
+    .footer__links{
+        gap: 30px;
+    }
+ }
+ 
